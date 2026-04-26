@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعـماد - AmAAd</title>
+    
+    <!-- Meta/Open Graph Tags -->
+    <meta property="og:title" content="أعـماد - AmAAd">
+    <meta property="og:description" content="منصة تعليمية متكاملة تقدم المحتوى بشكل تفاعلي مبهر، مدمج مع اختبارات قبلية وبعدية لضمان أقصى درجات الاستفادة للطلاب.">
+    <meta property="og:image" content="amaad-logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="amaad-logo.png" type="image/png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-gray-800 antialiased h-screen flex flex-col overflow-hidden bg-gray-50">
+
+    <!-- ================= LOGIN VIEW ================= -->
+    <div id="login-view" class="w-full h-full flex flex-col justify-center items-center fade-in bg-gradient-to-br from-indigo-50/50 to-gray-100 absolute inset-0 z-[100] bg-white hidden">
+        <div class="glass-panel p-10 rounded-3xl shadow-2xl w-full max-w-md text-center border border-white/60 bg-white/80 backdrop-blur-xl">
+            <div class="bg-white p-2 rounded-2xl w-24 h-24 mx-auto mb-6 shadow-sm border border-gray-100 flex items-center justify-center">
+                <img src="amaad-logo.png" alt="AmAAd Logo" class="h-16 object-contain">
+            </div>
+            <h2 class="text-3xl font-black text-dark mb-2">تسجيل الدخول</h2>
+            <p class="text-gray-500 mb-8 font-medium">مرحباً بك في منصة أعـماد (AmAAd)</p>
+            
+            <form id="login-form" onsubmit="handleLogin(event)" class="text-right">
+                <div class="mb-5">
+                    <label class="block text-sm font-bold text-gray-700 mb-2">اسم المستخدم</label>
+                    <div class="relative">
+                        <span class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" id="username" class="w-full bg-white border border-gray-200 rounded-xl py-3 px-10 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition shadow-sm" placeholder="أدخل اسم المستخدم" required>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-bold text-gray-700 mb-2">كلمة المرور</label>
+                    <div class="relative">
+                        <span class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" id="password" class="w-full bg-white border border-gray-200 rounded-xl py-3 px-10 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition shadow-sm" placeholder="أدخل كلمة المرور" required>
+                    </div>
+                </div>
+                
+                <div id="login-error" class="hidden mb-4 bg-red-50 text-red-500 text-sm font-bold p-3 rounded-lg text-center border border-red-100">
+                    <i class="fa-solid fa-triangle-exclamation ml-1"></i> بيانات الدخول غير صحيحة
+                </div>
+                
+                <button type="submit" class="w-full bg-gradient-to-r from-primary to-indigo-600 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 text-lg flex justify-center items-center gap-2">
+                    دخول للمنصة <i class="fa-solid fa-arrow-left mt-1"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="glass-panel sticky top-0 z-50 px-4 md:px-6 py-3 flex justify-between items-center shadow-sm">
+        <div class="flex items-center gap-3 cursor-pointer" onclick="showHome()">
+            <div class="bg-white p-1 rounded-lg transition-transform hover:scale-105 shadow-md cursor-zoom-in" onclick="event.stopPropagation(); openLogoModal()">
+                <img src="amaad-logo.png" alt="AmAAd Logo" class="h-8 object-contain pointer-events-none">
+            </div>
+            <h1 class="text-2xl font-bold text-dark hidden md:block">أعـماد (AmAAd)</h1>
+        </div>
+        
+        <div class="flex items-center gap-6">
+            <div class="hidden lg:flex gap-2 bg-white/50 px-4 py-2 rounded-full border border-gray-100">
+                <button onclick="loadModule(0)" class="nav-btn px-4 py-2 rounded-full font-bold text-sm transition-colors text-gray-700 hover:text-primary">تكنولوجيا 5 ابتدائي</button>
+                <button onclick="loadModule(1)" class="nav-btn px-4 py-2 rounded-full font-bold text-sm transition-colors text-gray-700 hover:text-primary">دين 3 إعدادي</button>
+                <button onclick="loadModule(2)" class="nav-btn px-4 py-2 rounded-full font-bold text-sm transition-colors text-gray-700 hover:text-primary">دين 2 ثانوي</button>
+            </div>
+            <!-- Login Button -->
+            <div id="login-btn-container" class="hidden items-center gap-3 border-r-2 border-gray-200 pr-4">
+                <button onclick="document.getElementById('login-view').classList.remove('hidden')" class="bg-primary text-white px-4 py-2 rounded-xl font-bold text-sm shadow hover:bg-indigo-600 transition"><i class="fa-solid fa-right-to-bracket ml-1"></i> دخول</button>
+            </div>
+            <!-- User Profile & Logout -->
+            <div id="user-profile" class="hidden items-center gap-3 border-r-2 border-gray-200 pr-4">
+                <div class="flex items-center gap-2 bg-indigo-50 px-3 py-1.5 rounded-xl border border-indigo-100">
+                    <span class="w-8 h-8 rounded-full bg-primary text-white flex justify-center items-center text-xs shadow-sm"><i class="fa-solid fa-user"></i></span>
+                    <span id="nav-username" class="font-bold text-primary text-sm"></span>
+                </div>
+                <button onclick="handleLogout()" class="text-gray-400 hover:text-red-500 transition-colors p-2 rounded-lg hover:bg-red-50" title="تسجيل الخروج">
+                    <i class="fa-solid fa-right-from-bracket text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Logos Container -->
+            <div class="flex items-center gap-3 mr-auto border-r-2 border-gray-200 pr-4">
+                <img src="logo-damietta.jpg" alt="Damietta Logo" class="h-10 object-contain drop-shadow-sm rounded bg-white">
+                <img src="logo-education.jpg" alt="Education Logo" class="h-10 object-contain drop-shadow-sm rounded bg-white">
+                <img src="logo-techno.jpg" alt="Techno Logo" class="h-10 object-contain drop-shadow-sm rounded bg-white">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 overflow-y-auto relative bg-gradient-to-b from-transparent to-gray-50/50">
+        
+        <!-- ================= HOME VIEW (LANDING PAGE) ================= -->
+        <div id="home-view" class="w-full flex-col justify-between fade-in flex min-h-full">
+            <!-- Hero Section -->
+            <div class="w-full max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between py-12 md:py-20 px-6 gap-12">
+                <div class="flex-1 text-right space-y-6">
+                    <span class="inline-block bg-indigo-100 text-primary px-4 py-2 rounded-full font-bold text-sm tracking-wide shadow-sm border border-indigo-200"><i class="fa-solid fa-rocket mr-1"></i> منصة تفاعلية حديثة</span>
+                    <h2 class="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary leading-tight pb-2">تعلم بذكاء، <br>وتفوق بسهولة</h2>
+                    <p class="text-xl text-gray-600 max-w-xl leading-relaxed font-medium">منصة تعليمية متكاملة تقدم المحتوى بشكل تفاعلي مبهر، مدمج مع اختبارات قبلية وبعدية لضمان أقصى درجات الاستفادة للطلاب.</p>
+                    <div class="flex flex-wrap gap-4 mt-8 pt-4">
+                        <button onclick="loadModule(0)" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 hover:scale-105 font-bold text-lg border border-indigo-400"><i class="fa-solid fa-laptop mr-2"></i> تكنولوجيا 5 ابتدائي</button>
+                        <button onclick="loadModule(1)" class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 hover:scale-105 font-bold text-lg border border-teal-400"><i class="fa-solid fa-mosque mr-2"></i> دين 3 إعدادي</button>
+                        <button onclick="loadModule(2)" class="bg-gradient-to-r from-gray-800 to-gray-900 text-white px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 hover:scale-105 font-bold text-lg border border-gray-600"><i class="fa-solid fa-book-quran mr-2"></i> دين 2 ثانوي</button>
+                    </div>
+                </div>
+                <div class="flex-1 flex justify-center scale-110">
+                    <img src="https://illustrations.popsy.co/amber/student-going-to-school.svg" alt="Student" class="w-full max-w-lg drop-shadow-2xl hero-img-anim">
+                </div>
+            </div>
+            
+            <!-- Features Section -->
+            <div class="w-full max-w-6xl mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/80 backdrop-blur-md p-8 rounded-3xl text-center transform transition duration-300 hover:-translate-y-3 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 shadow-inner">
+                         <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-dark">أهداف واضحة</h3>
+                    <p class="text-gray-500 leading-relaxed">لكل درس مجموعة من الأهداف المحددة والمدروسة بعناية لضمان تركيز الطالب.</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-md p-8 rounded-3xl text-center transform transition duration-300 hover:-translate-y-3 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">
+                    <div class="w-16 h-16 bg-emerald-50 text-emerald-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 shadow-inner">
+                         <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-dark">أنشطة تفاعلية</h3>
+                    <p class="text-gray-500 leading-relaxed">تجارب وأنشطة حيوية متجددة تساعد على تثبيت المعلومة وكسر الملل.</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-md p-8 rounded-3xl text-center transform transition duration-300 hover:-translate-y-3 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-50 text-purple-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 shadow-inner">
+                         <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-dark">تقييم مستمر</h3>
+                    <p class="text-gray-500 leading-relaxed">اختبارات قبلية وبعدية لمعرفة مستوى التقدم الحقيقي ومدى الاستيعاب.</p>
+                </div>
+            </div>
+            
+            <!-- Team Footer -->
+            <div class="w-full mt-auto bg-gradient-to-b from-white/40 to-white/90 backdrop-blur-xl border-t border-gray-200/60 p-10 mt-12 shadow-[0_-10px_40px_rgb(0,0,0,0.02)]">
+                <div class="max-w-6xl mx-auto text-center">
+                    <h3 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600 mb-8 tracking-wider"><i class="fa-solid fa-users text-dark ml-2"></i> فريق عمل تطوير المحتوى</h3>
+                    <div class="flex flex-wrap justify-center gap-6 md:gap-14 mb-10 text-gray-800">
+                        <div class="glass-panel px-6 py-3 rounded-2xl flex flex-col items-center gap-3 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-100 to-indigo-50 text-primary flex justify-center items-center font-black"><i class="fa-solid fa-user-astronaut"></i></span>
+                                <span class="font-bold text-lg">أية عطية الضويني</span>
+                            </div>
+                            <span class="text-xs font-bold text-primary bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100 w-full text-center">تصميم وتطوير الواجهات</span>
+                        </div>
+                        <div class="glass-panel px-6 py-3 rounded-2xl flex flex-col items-center gap-3 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-100 to-emerald-50 text-secondary flex justify-center items-center font-black"><i class="fa-solid fa-user-astronaut"></i></span>
+                                <span class="font-bold text-lg">عبد الحليم رجب</span>
+                            </div>
+                            <span class="text-xs font-bold text-secondary bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100 w-full text-center">إعداد وتصميم المحتوى</span>
+                        </div>
+                        <div class="glass-panel px-6 py-3 rounded-2xl flex flex-col items-center gap-3 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-100 to-purple-50 text-purple-600 flex justify-center items-center font-black"><i class="fa-solid fa-user-astronaut"></i></span>
+                                <span class="font-bold text-lg">أية أحمد البادي</span>
+                            </div>
+                            <span class="text-xs font-bold text-purple-600 bg-purple-50 px-3 py-1 rounded-full border border-purple-100 w-full text-center">برمجة وتطوير الموقع</span>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-8 opacity-50"></div>
+                    
+                    <h4 class="text-lg font-bold text-gray-400 mb-6 uppercase tracking-widest">إشراف أكاديمي وهندسي</h4>
+                    <div class="flex flex-wrap justify-center gap-10 font-bold text-xl text-dark">
+                        <div class="flex items-center gap-2 px-4 py-2 hover:text-primary transition-colors cursor-default"><i class="fa-solid fa-award text-yellow-500 text-2xl"></i> د / محمد شمة</div>
+                        <div class="flex items-center gap-2 px-4 py-2 hover:text-primary transition-colors cursor-default"><i class="fa-solid fa-award text-yellow-500 text-2xl"></i> م / غادة المتولي</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= MODULE VIEW ================= -->
+        <div id="module-view" class="max-w-6xl mx-auto hidden fade-in pb-20 pt-6">
+            <!-- Header -->
+            <div class="bg-white/90 backdrop-blur p-8 lg:p-10 rounded-3xl mb-10 flex flex-col md:flex-row items-center gap-8 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border-t-8 border-t-primary relative overflow-hidden">
+                <div class="absolute -left-16 -top-16 opacity-5 text-[15rem] text-primary pointer-events-none" id="mod-bg-icon"></div>
+                <div class="w-24 h-24 bg-gradient-to-br from-indigo-50 to-indigo-100 text-primary rounded-2xl flex items-center justify-center text-5xl shadow-inner shrink-0 relative z-10 border border-indigo-50" id="mod-icon"></div>
+                <div class="relative z-10">
+                    <span id="mod-badge" class="bg-primary text-white text-sm font-bold px-4 py-1.5 rounded-full tracking-wide shadow-sm mb-3 inline-block"></span>
+                    <h2 id="mod-title" class="text-4xl font-black text-dark mt-2 mb-3"></h2>
+                    <p id="mod-desc" class="text-gray-600 text-lg md:text-xl font-medium leading-relaxed"></p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <!-- Content / Lessons Grid -->
+                <div class="lg:col-span-2 space-y-10">
+                    
+                    <!-- Pre-Test Lock Overlay -->
+                    <div id="content-locked-overlay" class="bg-white/80 backdrop-blur-xl p-10 rounded-3xl border border-gray-200 text-center shadow-lg relative overflow-hidden fade-in">
+                        <div class="w-32 h-32 mx-auto bg-gray-50 rounded-full flex justify-center items-center mb-6 shadow-inner ring-4 ring-gray-100">
+                             <i class="fa-solid fa-lock text-6xl text-gray-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-dark mb-3">المحتوى مقفل</h3>
+                        <p class="text-gray-600 text-lg max-w-md mx-auto mb-8">يجب عليك اجتياز الاختبار القبلي للموديول أولاً للتعرف على مستواك الحالي قبل الدخول للدروس.</p>
+                        <button onclick="startQuiz('pre')" class="bg-gradient-to-r from-primary to-indigo-600 text-white font-bold py-4 px-10 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 text-lg inline-flex items-center gap-3">
+                            <i class="fa-solid fa-file-pen"></i> خوض الاختبار القبلي الآن
+                        </button>
+                    </div>
+
+                    <div id="actual-content" class="hidden space-y-10 fade-in">
+                        <div>
+                            <h3 class="text-2xl font-black text-dark flex items-center gap-3 mb-6 pb-4 border-b-2 border-gray-100">
+                                <span class="w-10 h-10 bg-indigo-50 text-primary rounded-xl flex items-center justify-center"><i class="fa-solid fa-list-ul"></i></span> الفهرس والدروس
+                            </h3>
+                            <div id="mod-content" class="space-y-6">
+                                <!-- Dynamic Sections and Lesson Cards Generated Here -->
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-black text-dark flex items-center gap-3 mb-6 pb-4 border-b-2 border-gray-100">
+                                <span class="w-10 h-10 bg-emerald-50 text-secondary rounded-xl flex items-center justify-center"><i class="fa-solid fa-flask"></i></span> الأنشطة العملية
+                            </h3>
+                            <div id="mod-activities" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <!-- Dynamic Activities Generated Here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="glass-panel p-8 rounded-3xl shadow-xl sticky top-28 border border-white/40 bg-white/60 backdrop-blur-2xl">
+                        <div class="text-center mb-8">
+                            <div class="w-20 h-20 bg-gradient-to-br from-yellow-100 to-yellow-50 text-yellow-600 rounded-2xl flex items-center justify-center text-4xl mx-auto mb-4 shadow-sm border border-yellow-200/50">
+                                <i class="fa-solid fa-clipboard-check"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-dark">اختبارات الموديول</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="relative">
+                                <button onclick="startQuiz('pre')" id="pre-test-btn" class="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-md hover:shadow-lg hover:bg-indigo-700 transition flex justify-center items-center gap-3 text-lg border-2 border-primary">
+                                    <i class="fa-solid fa-file-pen"></i> الاختبار القبلي
+                                </button>
+                                <div id="pre-test-badge" class="hidden absolute -top-3 -right-3 bg-green-500 text-white w-8 h-8 rounded-full flex justify-center items-center shadow-md animate-bounce"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            
+                            <hr class="border-gray-200 my-4">
+                            
+                            <button onclick="startQuiz('post')" id="post-test-btn" class="w-full bg-gray-100 text-gray-400 font-bold py-4 rounded-xl transition flex justify-center items-center gap-3 text-lg border-2 border-gray-200 cursor-not-allowed" disabled>
+                                <i class="fa-solid fa-graduation-cap"></i> الاختبار البعدي
+                            </button>
+                            <p id="post-test-hint" class="text-xs text-center text-gray-500 mt-2 font-semibold">يتم تفعيل الاختبار البعدي بعد الانتهاء من الموديول.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= LESSON/PAGE VIEW ================= -->
+        <div id="lesson-view" class="max-w-4xl mx-auto hidden fade-in pb-20 pt-6">
+            <!-- Back Button -->
+            <button onclick="backToModule()" class="mb-8 bg-white border border-gray-200 text-gray-700 px-5 py-3 rounded-xl font-bold flex items-center gap-3 hover:bg-gray-50 hover:text-primary transition shadow-sm hover:shadow-md">
+                <i class="fa-solid fa-arrow-right"></i> العودة إلى فهرس الموديول
+            </button>
+            
+            <!-- Lesson Paper/Page -->
+            <div class="bg-white p-8 md:p-14 rounded-3xl shadow-[0_10px_40px_rgb(0,0,0,0.06)] border border-gray-100 relative overflow-hidden">
+                <div class="absolute w-full h-2 top-0 left-0 bg-gradient-to-r from-secondary to-primary"></div>
+                <div class="absolute -left-10 top-20 opacity-[0.03] text-9xl text-gray-900 pointer-events-none"><i class="fa-solid fa-book-open-reader"></i></div>
+                
+                <div class="relative z-10">
+                    <span id="lesson-page-section" class="inline-block bg-emerald-50 text-secondary px-3 py-1 rounded text-sm font-bold mb-4 uppercase tracking-wide"></span>
+                    <h2 id="lesson-page-title" class="text-4xl md:text-5xl font-black text-dark mb-10 pb-6 border-b border-gray-100 leading-tight"></h2>
+                    
+                    <!-- Objectives Section (Dynamically Injected) -->
+                    <div id="lesson-page-objectives" class="mb-10 bg-blue-50/50 rounded-2xl p-6 md:p-8 border border-blue-100 shadow-inner">
+                        <h3 class="text-xl font-bold text-blue-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-bullseye text-blue-500"></i> أهداف الدرس:</h3>
+                        <ul id="lesson-objectives-list" class="space-y-2 list-inside list-disc text-blue-900/80 font-medium text-lg marker:text-blue-500">
+                        </ul>
+                    </div>
+                    
+                    <div id="lesson-page-content" class="lesson-content text-lg">
+                        <!-- Dynamic HTML -->
+                    </div>
+                </div>
+                
+                <div class="mt-16 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4 bg-gray-50/50 p-6 rounded-2xl">
+                    <p class="text-gray-500 font-medium flex items-center gap-2"><i class="fa-regular fa-clock text-xl"></i> وقت القراءة المقدر: 5 دقائق</p>
+                    <button onclick="backToModule()" class="bg-primary hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-xl transition shadow-md flex items-center gap-2">أتممت القراءة <i class="fa-solid fa-check-circle text-xl"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= QUIZ MODAL ================= -->
+        <div id="quiz-modal" class="fixed inset-0 bg-gray-900/40 backdrop-blur-sm z-[60] hidden flex-col justify-center items-center p-4">
+            <div class="bg-white w-full max-w-3xl rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] border border-white/20 transform transition-all scale-95" id="quiz-modal-inner">
+                <div class="bg-dark p-6 flex justify-between items-center text-white border-b-4 border-primary">
+                    <h3 class="font-black text-xl flex items-center gap-3" id="quiz-modal-title"><i class="fa-solid fa-pen-to-square text-yellow-400"></i> اختبار الموديول</h3>
+                    <button onclick="closeQuiz()" class="text-gray-400 hover:text-white text-3xl leading-none transition transform hover:scale-110">&times;</button>
+                </div>
+                <div class="p-6 md:p-8 overflow-y-auto flex-1 bg-gray-50 custom-scrollbar" id="quiz-container">
+                    <!-- Quiz Questions Injected Here -->
+                </div>
+                <div class="bg-white border-t p-6 flex justify-between items-center shadow-[0_-10px_20px_rgb(0,0,0,0.02)]">
+                    <div id="quiz-score" class="font-bold text-lg hidden w-full text-center"></div>
+                    <button id="submit-quiz-btn" onclick="submitQuiz()" class="bg-gradient-to-r from-secondary to-emerald-600 text-white px-10 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition mr-auto flex items-center gap-3 text-xl w-full md:w-auto justify-center">
+                        <i class="fa-solid fa-check-double"></i> تسليم الإجابات
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= LOGO MODAL ================= -->
+        <div id="logo-modal" class="fixed inset-0 bg-gray-900/90 backdrop-blur-sm z-[70] hidden flex-col justify-center items-center p-4 transition-all duration-300" onclick="closeLogoModal()">
+            <div class="relative w-full max-w-2xl flex justify-center" onclick="event.stopPropagation()">
+                <button onclick="closeLogoModal()" class="absolute -top-16 right-4 lg:-right-12 text-white hover:text-red-400 text-5xl font-light transition transform hover:scale-110">&times;</button>
+                <img src="amaad-logo.png" alt="AmAAd Logo Big" class="max-h-[85vh] w-auto rounded-3xl shadow-[0_0_50px_rgba(0,0,0,0.5)] border animate-pulse border-white/10 cursor-zoom-out transition duration-500 hover:scale-[1.02]" onclick="closeLogoModal()">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Data & Logic -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
