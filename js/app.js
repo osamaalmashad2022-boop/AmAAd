@@ -434,3 +434,92 @@ function closeLogoModal() {
     modal.classList.add('hidden');
     modal.classList.remove('flex');
 }
+
+// --- Member Role Modal Logic ---
+const teamRoles = {
+    'aya_aldowini': {
+        name: 'أية عطية الضويني',
+        role: 'تصميم وتطوير الواجهات',
+        avatarClass: 'bg-gradient-to-br from-indigo-100 to-indigo-50 text-primary',
+        icon: 'fa-user-astronaut',
+        mainTask: 'مسؤولة عن تصميم واجهة المستخدم:',
+        subTask: 'المرحلة التحضيرية والتنفيذية من حيث:',
+        tasks: [
+            'تصميم الصفحات التفاعلية',
+            'التأكد من تجربة المستخدم',
+            'تكويد وتطوير الواجهات',
+            'دعم التوافق مع الشاشات',
+            'التحسينات البصرية'
+        ]
+    },
+    'abdelhalim': {
+        name: 'عبد الحليم رجب',
+        role: 'إعداد وتصميم المحتوى',
+        avatarClass: 'bg-gradient-to-br from-emerald-100 to-emerald-50 text-secondary',
+        icon: 'fa-user-astronaut',
+        mainTask: 'مسؤول عن إعداد المادة العلمية:',
+        subTask: 'مرحلة المحتوى من حيث:',
+        tasks: [
+            'تجميع المادة العلمية',
+            'صياغة الأهداف التعليمية',
+            'إعداد الأنشطة التدريبية',
+            'تصميم أسئلة التقييم',
+            'المراجعة اللغوية والعلمية'
+        ]
+    },
+    'aya_albadi': {
+        name: 'أية أحمد البادي',
+        role: 'برمجة وتطوير الموقع',
+        avatarClass: 'bg-gradient-to-br from-purple-100 to-purple-50 text-purple-600',
+        icon: 'fa-user-astronaut',
+        mainTask: 'مسؤولة عن التطوير البرمجي:',
+        subTask: 'مرحلة البرمجة من حيث:',
+        tasks: [
+            'برمجة الواجهات التفاعلية',
+            'ربط المنصة بقواعد البيانات',
+            'إدارة خوادم المنصة',
+            'تأمين وحماية البيانات',
+            'تحسين أداء وسرعة الموقع'
+        ]
+    }
+};
+
+function openMemberModal(memberId) {
+    const member = teamRoles[memberId];
+    if(!member) return;
+
+    document.getElementById('member-modal-avatar').innerHTML = `<span class="w-full h-full flex justify-center items-center text-4xl ${member.avatarClass}"><i class="fa-solid ${member.icon}"></i></span>`;
+    document.getElementById('member-modal-name').innerText = member.name;
+    document.getElementById('member-modal-role').innerText = member.role;
+    document.getElementById('member-modal-main-task').innerHTML = `<i class="fa-regular fa-clipboard text-yellow-600"></i> <span>${member.mainTask}</span>`;
+    document.getElementById('member-modal-sub-task').innerText = member.subTask;
+    
+    const tasksList = document.getElementById('member-modal-tasks-list');
+    tasksList.innerHTML = member.tasks.map(task => `
+        <li class="flex items-center gap-3">
+            <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+            <span class="text-gray-600 text-sm font-bold">${task}</span>
+        </li>
+    `).join('');
+
+    const modal = document.getElementById('member-modal');
+    const modalInner = document.getElementById('member-modal-inner');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    
+    setTimeout(() => {
+        modalInner.classList.remove('scale-95');
+        modalInner.classList.add('scale-100');
+    }, 10);
+}
+
+function closeMemberModal() {
+    const modal = document.getElementById('member-modal');
+    const modalInner = document.getElementById('member-modal-inner');
+    modalInner.classList.remove('scale-100');
+    modalInner.classList.add('scale-95');
+    setTimeout(() => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }, 200);
+}
