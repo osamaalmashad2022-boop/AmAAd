@@ -2,202 +2,83 @@ const modulesData = [
     {
         "id": 0,
         "title": "تكنولوجيا المعلومات والاتصالات",
-        "badge": "الصف الخامس - الترم الأول",
+        "badge": "الصف الخامس - الترم الثاني",
         "icon": "fa-laptop-code",
-        "desc": "دراسة شاملة للأدوات التكنولوجية الحديثة والشبكات وكيفية حماية البيانات الشخصية والبحث الآمن.",
+        "desc": "استكشاف المواطنة الرقمية، أدوات التواصل عبر الإنترنت، خدمات الإنترنت، وكيفية إنشاء مشاريع رقمية واستخدام البرمجة.",
         "sections": [
             {
-                "title": "المحور الأول: دور تكنولوجيا المعلومات في حياتنا",
+                "title": "المحور الثالث: المواطنة الرقمية",
                 "items": [
                     {
                         "title": "الدرس 1: المستكشف النشط",
-                        "shortDesc": "تعرف على فريد هيبرت وأدواته التكنولوجية.",
+                        "shortDesc": "تعرف على بيكي كينيدي وكيفية استخدام التكنولوجيا في حل مشكلات المجتمع.",
                         "icon": "fa-user-astronaut",
                         "objectives": [
-                            "أن يدرك الطالب أهمية الأدوات التكنولوجية في عمل المستكشفين والعلماء.",
-                            "أن يعدد الطالب استخدامات برامج معالجة الكلمات والجداول الحسابية.",
-                            "أن يتعلم كيفية التواصل الرسمي باستخدام البريد الإلكتروني."
+                            "أن يتعرف الطالب على دور التكنولوجيا في حماية البيئة.",
+                            "أن يفهم كيفية استخدام التطبيقات لجمع البيانات."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech1/800/400\" alt=\"Explorer using tech\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">العالم فريد هيبرت والتكنولوجيا</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">عالم الآثار والمستكشف في (ناشونال جيوغرافيك) <strong>فريد هيبرت</strong> يستخدم أدوات تكنولوجية متنوعة في عمله اليومي للتواصل وتوثيق اكتشافاته. التكنولوجيا لم تعد رفاهية، بل هي أداة أساسية لإنجاز المهام بدقة وسرعة.</p>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">من أهم البرامج التي يعتمد عليها:</p>\n                            <ul class=\"mb-6 space-y-3 bg-gray-50 p-6 rounded-xl border border-gray-100\">\n                                <li class=\"flex items-start gap-3\"><i class=\"fa-solid fa-file-word text-blue-600 mt-1 text-xl\"></i> <div><strong>برنامج معالج الكلمات (Word):</strong> لكتابة التقارير والمقالات الدقيقة عن الاكتشافات.</div></li>\n                                <li class=\"flex items-start gap-3\"><i class=\"fa-solid fa-file-excel text-green-600 mt-1 text-xl\"></i> <div><strong>برنامج الجداول الحسابية (Excel):</strong> لإنشاء الرسوم البيانية والجداول الإحصائية التي تلخص البيانات.</div></li>\n                                <li class=\"flex items-start gap-3\"><i class=\"fa-solid fa-envelope text-red-500 mt-1 text-xl\"></i> <div><strong>البريد الإلكتروني (Email):</strong> للتواصل بشكل رسمي واحترافي مع زملائه ورؤسائه في العمل وإرسال المرفقات.</div></li>\n                            </ul>\n                        \n<div class=\"mt-8\">\n    <h4 class=\"font-bold text-lg mb-3 text-indigo-700\"><i class=\"fa-brands fa-youtube text-red-600 mr-2\"></i> فيديو توضيحي: National Geographic Explorer</h4>\n    <div class=\"aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-md bg-gray-900 border-4 border-gray-800\">\n        <iframe src=\"https://www.youtube-nocookie.com/embed/vmPredMTXpg?rel=0\" title=\"National Geographic Explorer\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\" class=\"w-full h-64 md:h-96\"></iframe>\n    </div>\n    <div class=\"text-center mt-3\">\n        <a href=\"https://www.youtube.com/watch?v=vmPredMTXpg\" target=\"_blank\" class=\"inline-block bg-red-50 text-red-600 hover:bg-red-600 hover:text-white transition font-bold py-2 px-6 rounded-full text-sm border border-red-200 shadow-sm\">\n            <i class=\"fa-solid fa-arrow-up-right-from-square\"></i> إذا لم يعمل الفيديو داخل الموقع، اضغط هنا للمشاهدة على يوتيوب\n        </a>\n    </div>\n</div>\n"
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech5_2_1/800/400\" alt=\"Becky Kennedy\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">المستكشفة بيكي كينيدي</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">استخدمت بيكي كينيدي التكنولوجيا لإنشاء تطبيق <strong>(Debris Tracker)</strong> لتعقب المخلفات وحماية البيئة. يوضح هذا الدرس كيف يمكن للأفراد المساهمة في حل المشكلات العالمية عبر الأدوات الرقمية.</p>\n"
                     },
                     {
-                        "title": "الدرس 2: الأدوات الملحقة بالكمبيوتر",
-                        "shortDesc": "دراسة الفلاشة، كابل الإيثرنت، وجهاز التوجيه.",
-                        "icon": "fa-plug",
+                        "title": "الدرس 2: المواطنة الرقمية",
+                        "shortDesc": "الحقوق والمسؤوليات عند استخدام الإنترنت.",
+                        "icon": "fa-shield-halved",
                         "objectives": [
-                            "أن يتعرف الطالب على الملحقات الأساسية للكمبيوتر واستخداماتها.",
-                            "أن يقارن بين الاتصال السلكي (الإيثرنت) واللاسلكي (الواي فاي).",
-                            "أن يحدد وظيفة جهاز التوجيه (الراوتر) بدقة."
+                            "أن يحدد الطالب حقوقه ومسؤولياته الرقمية.",
+                            "أن يدرك أهمية البصمة الرقمية."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech2/800/400\" alt=\"Computer Accessories\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">ملحقات الكمبيوتر الأساسية</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">لكي تعمل أجهزة الكمبيوتر بكفاءة، يتم توصيلها بملحقات ضرورية لزيادة قدراتها. من أبرز هذه الملحقات:</p>\n                            <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6 my-6\">\n                                <div class=\"bg-blue-50 p-6 rounded-xl border border-blue-100 shadow-sm\">\n                                    <h4 class=\"font-bold text-blue-800 text-xl mb-2\"><i class=\"fa-brands fa-usb text-blue-500 mr-2\"></i> ذاكرة الفلاش</h4>\n                                    <p class=\"text-blue-900/80\">تستخدم لحفظ ونقل الملفات بسهولة من جهاز لآخر بفضل حجمها الصغير وسعتها الكبيرة.</p>\n                                </div>\n                                <div class=\"bg-emerald-50 p-6 rounded-xl border border-emerald-100 shadow-sm\">\n                                    <h4 class=\"font-bold text-emerald-800 text-xl mb-2\"><i class=\"fa-solid fa-network-wired text-emerald-500 mr-2\"></i> كابل الإيثرنت</h4>\n                                    <p class=\"text-emerald-900/80\">سلك يربط جهاز الكمبيوتر بجهاز التوجيه (الراوتر) مباشرة، وهو يوفر اتصالاً بالإنترنت أسرع وأكثر استقراراً من الواي فاي.</p>\n                                </div>\n                            </div>\n                            <div class=\"alert-box bg-indigo-50 border border-indigo-200 p-5 rounded-xl text-indigo-800 mb-6 shadow-inner\">\n                                <i class=\"fa-solid fa-wifi text-indigo-500 mr-2 text-xl\"></i> <strong>جهاز التوجيه (Router):</strong> هو الجهاز الأساسي الذي يربط شبكتك المنزلية أو المدرسية بشبكة الإنترنت العالمية، ويوزع الإشارة على الأجهزة المختلفة.\n                            </div>\n                        "
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech5_2_2/800/400\" alt=\"Digital Citizenship\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">حقوقك ومسؤولياتك</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">المواطنة الرقمية هي القدرة على استخدام التكنولوجيا بمسؤولية وأمان. تشمل حقوقك الخصوصية والحماية من التنمر، وتشمل مسؤولياتك احترام الآخرين وتوثيق المصادر.</p>\n<ul class=\"mb-6 space-y-3 bg-gray-50 p-6 rounded-xl border border-gray-100\">\n    <li class=\"flex items-start gap-3\"><i class=\"fa-solid fa-check-circle text-blue-600 mt-1 text-xl\"></i> <div><strong>الحقوق:</strong> الخصوصية، الحماية من القرصنة، والقدرة على التفاعل عبر الإنترنت.</div></li>\n    <li class=\"flex items-start gap-3\"><i class=\"fa-solid fa-triangle-exclamation text-orange-500 mt-1 text-xl\"></i> <div><strong>المسؤوليات:</strong> احترام خصوصية الآخرين، ذكر المصادر، واستخدام الإنترنت بذكاء.</div></li>\n</ul>\n"
                     },
                     {
-                        "title": "الدرس 3: الشبكات (Networks)",
-                        "shortDesc": "مقارنة بين شبكة الإنترنت العامة وشبكة الإنترانت المغلقة.",
-                        "icon": "fa-network-wired",
+                        "title": "الدرس 3: التواصل عبر الإنترنت",
+                        "shortDesc": "أنواع التواصل الرسمي وغير الرسمي.",
+                        "icon": "fa-comments",
                         "objectives": [
-                            "أن يفرق الطالب بين شبكة الإنترنت وشبكة الإنترانت.",
-                            "أن يستنتج أهمية الشبكات المغلقة في توفير الأمان والخصوصية للمؤسسات."
+                            "أن يفرق بين التواصل المتزامن وغير المتزامن.",
+                            "أن يختار الأداة المناسبة للتواصل."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech3/800/400\" alt=\"Global Networks\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">أنواع الشبكات: الإنترنت والإنترانت</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">الشبكة هي مجموعة من الأجهزة المتصلة معاً لتبادل المعلومات والموارد. هناك فرق كبير بين الشبكات المفتوحة والمغلقة:</p>\n                            <table class=\"w-full text-right mb-8 border-collapse border border-gray-200 bg-white shadow-sm rounded-lg overflow-hidden\">\n                                <thead>\n                                    <tr class=\"bg-gray-100 text-gray-700\">\n                                        <th class=\"p-4 border-b border-gray-200 w-1/2\">شبكة الإنترنت (Internet)</th>\n                                        <th class=\"p-4 border-b border-gray-200 w-1/2\">شبكة الإنترانت (Intranet)</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td class=\"p-4 border-b border-gray-200\">شبكة عالمية عامة.</td>\n                                        <td class=\"p-4 border-b border-gray-200\">شبكة محلية ومغلقة.</td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"p-4 border-b border-gray-200\">مفتوحة ويمكن لأي شخص الوصول إليها.</td>\n                                        <td class=\"p-4 border-b border-gray-200\">خاصة تُستخدم عادة داخل مؤسسة واحدة (مثل مدرسة أو شركة).</td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"p-4 border-b border-gray-200\">مستوى الأمان فيها أقل بسبب الانفتاح.</td>\n                                        <td class=\"p-4 border-b border-gray-200\">تتميز بدرجة عالية من الأمان والخصوصية.</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        \n<div class=\"mt-8\">\n    <h4 class=\"font-bold text-lg mb-3 text-indigo-700\"><i class=\"fa-brands fa-youtube text-red-600 mr-2\"></i> فيديو توضيحي: What is the Internet?</h4>\n    <div class=\"aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-md bg-gray-900 border-4 border-gray-800\">\n        <iframe src=\"https://www.youtube-nocookie.com/embed/Dxcc6ycZ73M?rel=0\" title=\"What is the Internet?\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\" class=\"w-full h-64 md:h-96\"></iframe>\n    </div>\n    <div class=\"text-center mt-3\">\n        <a href=\"https://www.youtube.com/watch?v=Dxcc6ycZ73M\" target=\"_blank\" class=\"inline-block bg-red-50 text-red-600 hover:bg-red-600 hover:text-white transition font-bold py-2 px-6 rounded-full text-sm border border-red-200 shadow-sm\">\n            <i class=\"fa-solid fa-arrow-up-right-from-square\"></i> إذا لم يعمل الفيديو داخل الموقع، اضغط هنا للمشاهدة على يوتيوب\n        </a>\n    </div>\n</div>\n"
-                    },
-                    {
-                        "title": "الدرس 4: أدوات التواصل الرقمي",
-                        "shortDesc": "إنترنت الأشياء وتقنية البلوتوث.",
-                        "icon": "fa-bluetooth",
-                        "objectives": [
-                            "أن يشرح الطالب مفهوم (إنترنت الأشياء IoT).",
-                            "أن يوضح الفائدة من استخدام تقنية البلوتوث في حياتنا اليومية."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech4/800/400\" alt=\"Internet of Things\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">إنترنت الأشياء (IoT)</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">لم يعد الإنترنت مقتصراً على أجهزة الكمبيوتر والهواتف، بل امتد ليشمل الأشياء من حولنا!</p>\n                            <div class=\"bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-6 rounded-2xl mb-8 shadow-lg\">\n                                <h4 class=\"font-bold text-xl mb-2\"><i class=\"fa-solid fa-lightbulb text-yellow-300 mr-2\"></i> ماذا يعني ذلك؟</h4>\n                                <p class=\"text-blue-50\">هو إمكانية ربط الأجهزة المنزلية العادية (مثل الثلاجة الذكية، الغسالة، التكييف، ومكبرات الصوت) بشبكة الإنترنت للتحكم بها عن بُعد عبر تطبيقات الهاتف أينما كنت.</p>\n                            </div>\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">تقنية البلوتوث (Bluetooth)</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">هي تقنية اتصال لاسلكية قصيرة المدى. تُستخدم لربط الأجهزة القريبة من بعضها (في نطاق أمتار قليلة) مثل:</p>\n                            <ul class=\"list-disc list-inside mb-6 space-y-2 text-gray-700 text-lg\">\n                                <li>ربط سماعة لاسلكية بالهاتف الذكي.</li>\n                                <li>نقل صورة أو ملف صغير من هاتف لآخر.</li>\n                            </ul>\n                        "
-                    },
-                    {
-                        "title": "الدرس 5: مشكلات الاتصال وكيفية حلها",
-                        "shortDesc": "حلول سريعة لتجمد الشاشة أو بطء الإنترنت.",
-                        "icon": "fa-screwdriver-wrench",
-                        "objectives": [
-                            "أن يحدد الطالب المشكلات التقنية الشائعة عند استخدام الكمبيوتر.",
-                            "أن يتعلم كيفية تطبيق حلول سريعة مثل إنهاء المهام أو إعادة تشغيل الراوتر."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech5/800/400\" alt=\"Troubleshooting\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">أشهر المشكلات التقنية وكيفية حلها</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">كمستخدم للتكنولوجيا، يجب أن تمتلك مهارات استكشاف الأخطاء وإصلاحها (Troubleshooting):</p>\n                            <div class=\"space-y-4 mb-8\">\n                                <div class=\"bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex gap-4 items-start\">\n                                    <div class=\"w-12 h-12 bg-red-50 text-red-500 rounded-full flex items-center justify-center text-xl shrink-0\"><i class=\"fa-solid fa-desktop\"></i></div>\n                                    <div>\n                                        <h4 class=\"font-bold text-lg text-dark mb-1\">المشكلة: تجمد الشاشة</h4>\n                                        <p class=\"text-gray-600\"><strong>الحل:</strong> الضغط في نفس الوقت على أزرار لوحة المفاتيح: <code class=\"bg-gray-100 px-2 py-1 rounded text-sm text-pink-600 mx-1\">Ctrl + Alt + Delete</code> لفتح مدير المهام (Task Manager).</p>\n                                    </div>\n                                </div>\n                                <div class=\"bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex gap-4 items-start\">\n                                    <div class=\"w-12 h-12 bg-yellow-50 text-yellow-600 rounded-full flex items-center justify-center text-xl shrink-0\"><i class=\"fa-solid fa-wifi\"></i></div>\n                                    <div>\n                                        <h4 class=\"font-bold text-lg text-dark mb-1\">المشكلة: بطء أو انقطاع الإنترنت</h4>\n                                        <p class=\"text-gray-600\"><strong>الحل:</strong> التأكد من توصيل كابل الإيثرنت جيداً، أو محاولة إعادة تشغيل جهاز الراوتر والانتظار لدقيقتين.</p>\n                                    </div>\n                                </div>\n                            </div>\n                        "
-                    },
-                    {
-                        "title": "الدرس 6: إدارة الملفات الرقمية",
-                        "shortDesc": "كيفية تنظيم الملفات وإنشاء المجلدات.",
-                        "icon": "fa-folder-open",
-                        "objectives": [
-                            "أن يتعلم الطالب كيفية إنشاء مجلدات وتسميتها.",
-                            "أن يدرك أهمية التنظيم الرقمي لسرعة الوصول للمعلومات."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech8/800/400\" alt=\"File Management\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">تنظيم الملفات والمجلدات</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">من المهم جداً تنظيم الملفات على جهاز الكمبيوتر حتى لا تضيع وتسهل عملية البحث عنها. يمكنك فعل ذلك بإنشاء مجلد رئيسي (Main Folder) وبداخله مجلدات فرعية (Subfolders).</p>\n                            <ul class=\"list-disc list-inside mb-6 space-y-2 text-gray-700 text-lg\">\n                                <li><strong>خطوات إنشاء مجلد:</strong> انقر بزر الماوس الأيمن، اختر New ثم Folder.</li>\n                                <li>قم بتسمية المجلدات بأسماء واضحة مثل \"الصور\"، \"الواجبات\".</li>\n                            </ul>\n                        "
-                    },
-                    {
-                        "title": "الدرس 7: استراتيجيات البحث في الإنترنت",
-                        "shortDesc": "كيف تبحث بذكاء وتحصل على نتائج دقيقة.",
-                        "icon": "fa-magnifying-glass",
-                        "objectives": [
-                            "أن يتعرف الطالب على طرق تضييق نطاق البحث المتقدمة.",
-                            "أن يستخدم علامات التنصيص للبحث عن جمل دقيقة."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech9/800/400\" alt=\"Web Search\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">البحث الذكي في محركات البحث</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">محركات البحث مليئة بالمعلومات، للوصول للمعلومة الدقيقة استخدم حيل البحث:</p>\n                            <ul class=\"mb-6 space-y-3 bg-gray-50 p-6 rounded-xl border border-gray-100\">\n                                <li><i class=\"fa-solid fa-quote-right text-blue-500 mx-2\"></i> <strong>علامات التنصيص (\" \"):</strong> للبحث عن الكلمة بالترتيب الدقيق.</li>\n                                <li><i class=\"fa-solid fa-minus text-red-500 mx-2\"></i> <strong>علامة الناقص (-):</strong> لاستبعاد كلمات معينة من نتائج البحث.</li>\n                                <li><i class=\"fa-solid fa-plus text-green-500 mx-2\"></i> <strong>علامة الزائد (+):</strong> للتأكيد على وجود الكلمة في النتائج.</li>\n                            </ul>\n                        "
-                    },
-                    {
-                        "title": "الدرس 8: مشاركة المعلومات",
-                        "shortDesc": "كيفية استخدام تطبيقات المشاركة وجداول البيانات.",
-                        "icon": "fa-share-nodes",
-                        "objectives": [
-                            "أن يعدد الطالب التطبيقات المتاحة لمشاركة المعلومات (مثل البريد، والشبكات).",
-                            "أن يفهم أهمية التحقق من المعلومات قبل مشاركتها."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech10/800/400\" alt=\"Data Sharing\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">مشاركة البيانات بمسؤولية</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">بعد جمع المعلومات، يأتي دور مشاركتها مع الزملاء. يمكن استخدام البريد الإلكتروني أو الشبكة الداخلية للمدرسة. الأهم هو التأكد من صحة المعلومات المرفقة.</p>\n                            <div class=\"alert-box bg-indigo-50 border border-indigo-200 p-5 rounded-xl text-indigo-800 mb-6 shadow-inner\">\n                                <i class=\"fa-solid fa-check text-indigo-500 mr-2 text-xl\"></i> لا تقم بمشاركة المعلومات إلا إذا تأكدت من مصدرها وأهميتها لتجنب نشر الشائعات.\n                            </div>\n                        "
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech5_2_3/800/400\" alt=\"Communication\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">أدوات التواصل الرقمي</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">يوجد نوعان من التواصل:</p>\n<div class=\"grid grid-cols-1 md:grid-cols-2 gap-6 my-6\">\n    <div class=\"bg-blue-50 p-6 rounded-xl border border-blue-100 shadow-sm\">\n        <h4 class=\"font-bold text-blue-800 text-xl mb-2\">التواصل المتزامن</h4>\n        <p class=\"text-blue-900/80\">يحدث في الوقت الفعلي مثل مكالمات الفيديو والمحادثات المباشرة.</p>\n    </div>\n    <div class=\"bg-emerald-50 p-6 rounded-xl border border-emerald-100 shadow-sm\">\n        <h4 class=\"font-bold text-emerald-800 text-xl mb-2\">التواصل غير المتزامن</h4>\n        <p class=\"text-emerald-900/80\">لا يتطلب استجابة فورية مثل البريد الإلكتروني والرسائل المسجلة.</p>\n    </div>\n</div>\n"
                     }
                 ]
             },
             {
-                "title": "المحور الثاني: احتياطات الأمن والسلامة الرقمية",
+                "title": "المحور الرابع: مشروعات رقمية",
                 "items": [
                     {
-                        "title": "الدرس 1: حماية أنفسنا ومعلوماتنا",
-                        "shortDesc": "أهمية حماية البيانات الشخصية (PII).",
-                        "icon": "fa-shield-halved",
+                        "title": "الدرس 1: المستكشف النشط",
+                        "shortDesc": "د. دييغو بونسي دي ليون واستخدام التكنولوجيا في الطاقة.",
+                        "icon": "fa-lightbulb",
                         "objectives": [
-                            "أن يعرف الطالب مفهوم (المعلومات الشخصية PII).",
-                            "أن يكتسب سلوكيات مسؤولة للحفاظ على بياناته من الاختراق."
+                            "أن يفهم دور التكنولوجيا في ترشيد استهلاك الطاقة."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech6/800/400\" alt=\"Security\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">حماية المعلومات الشخصية (PII)</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">معلوماتك الشخصية (Personally Identifiable Information) هي أي بيانات يمكن استخدامها لتحديد هويتك في الواقع، وتشمل:</p>\n                            <ul class=\"list-disc list-inside mb-6 space-y-2 text-gray-700 text-lg ml-4\">\n                                <li>الاسم الكامل والعنوان الشخصي.</li>\n                                <li>رقم الهاتف وتاريخ الميلاد.</li>\n                                <li>الرقم القومي وكلمات المرور الخاصة بك.</li>\n                            </ul>\n                            <div class=\"alert-box bg-red-50 border border-red-200 p-5 rounded-xl text-red-800 mb-6 shadow-inner\">\n                                <i class=\"fa-solid fa-triangle-exclamation text-red-500 mr-2 text-xl\"></i> <strong>تحذير هام:</strong> هذه المعلومات تعتبر كنزاً للقراصنة (Hackers). يجب ألا تشاركها أبداً مع أشخاص لا تعرفهم.\n                            </div>\n                        "
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech5_2_4/800/400\" alt=\"Energy Tech\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">التكنولوجيا والطاقة</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">استخدم د. دييغو المستشعرات والأدوات الرقمية لمراقبة استهلاك الطاقة وتوفيرها، مما يساهم في بناء مدن ذكية ومستدامة.</p>\n"
                     },
                     {
-                        "title": "الدرس 2: سرية كلمة المرور",
-                        "shortDesc": "كيفية إنشاء كلمات مرور قوية وتجنب الاختراق.",
-                        "icon": "fa-key",
+                        "title": "الدرس 4: مقدمة في الخوارزميات",
+                        "shortDesc": "كيف يفكر الكمبيوتر؟",
+                        "icon": "fa-code-branch",
                         "objectives": [
-                            "أن يصمم كلمة مرور قوية تتوافق مع معايير الأمان العالمية.",
-                            "أن يدرك خطورة استخدام نفس كلمة المرور لحسابات متعددة."
+                            "أن يعرف مفهوم الخوارزمية.",
+                            "أن يصمم خطوات منطقية لحل مشكلة."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech7/800/400\" alt=\"Password Security\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">قواعد كلمة المرور القوية</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">لحماية حساباتك من الاختراق السهل (مثل هجمات التخمين)، يجب أن تلتزم بمعايير إنشاء كلمات المرور:</p>\n                            <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-8\">\n                                <div class=\"bg-green-50 p-4 rounded-xl border border-green-200\">\n                                    <h4 class=\"font-bold text-green-800 mb-2\"><i class=\"fa-solid fa-check-circle text-green-500 mr-1\"></i> افعل ذلك</h4>\n                                    <ul class=\"text-sm text-green-900 space-y-1\">\n                                        <li>✔ لا تقل عن 8 رموز (حروف وأرقام).</li>\n                                        <li>✔ استخدم حروفاً كبيرة وصغيرة ورموز (مثل @, #).</li>\n                                    </ul>\n                                </div>\n                                <div class=\"bg-red-50 p-4 rounded-xl border border-red-200\">\n                                    <h4 class=\"font-bold text-red-800 mb-2\"><i class=\"fa-solid fa-times-circle text-red-500 mr-1\"></i> تجنب ذلك</h4>\n                                    <ul class=\"text-sm text-red-900 space-y-1\">\n                                        <li>✖ استخدام اسمك أو تاريخ ميلادك.</li>\n                                        <li>✖ أرقام متسلسلة مثل 123456.</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        "
-                    },
-                    {
-                        "title": "الدرس 3: الخصوصية الرقمية",
-                        "shortDesc": "كيفية التحكم في إعدادات الخصوصية للحسابات.",
-                        "icon": "fa-eye-slash",
-                        "objectives": [
-                            "أن يطبق الطالب إعدادات الخصوصية على حساباته.",
-                            "أن يميز بين المعلومات العامة والمعلومات الحساسة."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech11/800/400\" alt=\"Privacy Settings\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">إعدادات الخصوصية</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">في جميع تطبيقات التواصل الاجتماعي، يوجد قسم يسمى \"الخصوصية\". من خلاله يمكنك التحكم بمن يستطيع رؤية منشوراتك وصورك. من المهم دائماً تخصيصها لتكون للأصدقاء فقط وليس \"للعامة\".</p>\n                        "
-                    },
-                    {
-                        "title": "الدرس 4: حقوق الطبع والنشر",
-                        "shortDesc": "احترام حقوق الملكية الفكرية وتوثيق المصادر.",
-                        "icon": "fa-copyright",
-                        "objectives": [
-                            "أن يعرف مفهوم حقوق الطبع والنشر.",
-                            "أن يكتسب سلوك توثيق المصادر عند اقتباس أي محتوى."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech12/800/400\" alt=\"Copyright\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">احترام الملكية الفكرية</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">حقوق الطبع والنشر (Copyright) هي قانون يحمي أعمال المؤلفين والمبدعين. لا يجوز أخذ صورة أو مقال أو فيديو ونسبته لنفسك. يجب دائماً ذكر المصدر واسم المؤلف الأصلي تقديراً لجهده.</p>\n                        "
-                    },
-                    {
-                        "title": "الدرس 5: مصادر المعلومات الموثوقة",
-                        "shortDesc": "كيفية التفرقة بين الأخبار الكاذبة والمصادر الرسمية.",
-                        "icon": "fa-check-double",
-                        "objectives": [
-                            "أن يستخرج الطالب مصادر موثوقة مثل بنك المعرفة المصري.",
-                            "أن يحذر من ويكيبيديا والمدونات كمصادر نهائية."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech13/800/400\" alt=\"Reliable Sources\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">المصادر الموثوقة وغير الموثوقة</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">ليس كل ما يقرأ على الإنترنت صحيح. المصادر الموثوقة تكون غالباً لمؤسسات حكومية أو تعليمية (مثل بنك المعرفة المصري EKB). أما المصادر غير الموثوقة فتشمل المدونات الشخصية ومواقع التواصل المفتوحة لأي شخص للتعديل فيها.</p>\n                        "
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/tech5_2_5/800/400\" alt=\"Algorithms\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">ما هي الخوارزمية؟</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">هي مجموعة من الخطوات المرتبة منطقياً لإنجاز مهمة معينة. أجهزة الكمبيوتر تنفذ التعليمات بناءً على هذه الخوارزميات.</p>\n"
                     }
                 ]
             }
         ],
         "activities": [
             {
-                "title": "نشاط إدارة الملفات العملي",
-                "desc": "قم بإنشاء مجلد رئيسي على سطح المكتب باسم (مدرستي)، وبداخله مجلدين فرعيين (الواجبات) و (المشاريع)، وقم بنقل صورة ومستند نصي إليهما."
+                "title": "تحدي المواطنة الرقمية",
+                "desc": "قم بكتابة ميثاق للفصل يوضح الحقوق والمسؤوليات الرقمية للطلاب."
             },
             {
-                "title": "ورشة الأمن الرقمي",
-                "desc": "افتح مستند نصي، وحاول ابتكار 3 كلمات مرور قوية جداً لحساباتك تتوافق مع شروط الأمان، واختبر قوتها في موقع (Password Strength Meter)."
-            },
-            {
-                "title": "بحث استكشافي في EKB",
-                "desc": "استخدم موقع بنك المعرفة المصري للبحث عن مقال علمي موثوق حول (إنترنت الأشياء IoT) وقم بتوثيق المصدر في نهاية بحثك."
-            },
-            {
-                "title": "مخطط الشبكات",
-                "desc": "باستخدام ورقة وقلم أو برنامج الرسام، ارسم خريطة مبسطة توضح الفرق بين الشبكة المحلية المغلقة (LAN/الإنترانت) وشبكة الإنترنت العامة مع كتابة خصائص كل منها."
+                "title": "تصميم خوارزمية",
+                "desc": "اكتب خطوات خوارزمية (وصفة) لعمل شطيرة أو تنظيف الأسنان."
             }
         ],
         "quiz": [
             {
-                "q": "أصغر وحدة لقياس سعة التخزين في الكمبيوتر هي:",
-                "options": [
-                    "البت (Bit)",
-                    "البايت (Byte)",
-                    "الميجابايت (MB)",
-                    "الجيجابايت"
-                ],
-                "correct": 0
-            },
-            {
-                "q": "شبكة الإنترنت هي شبكة مغلقة مخصصة لمؤسسة واحدة فقط وتتميز بالخصوصية.",
-                "options": [
-                    "صح",
-                    "خطأ"
-                ],
-                "correct": 1
-            },
-            {
-                "q": "لربط جهاز الكمبيوتر بشبكة الإنترنت بشكل مباشر ومستقر نحتاج إلى:",
-                "options": [
-                    "كابل إيثرنت وجهاز توجيه",
-                    "طابعة وسماعات",
-                    "فلاشة ميموري",
-                    "لوحة مفاتيح"
-                ],
-                "correct": 0
-            },
-            {
-                "q": "لحل مشكلة تجمد الشاشة في الكمبيوتر، نضغط على (Ctrl + Alt + Delete) لإنهاء البرنامج.",
+                "q": "من حقوقك الرقمية الخصوصية والحماية من التنمر.",
                 "options": [
                     "صح",
                     "خطأ"
@@ -205,17 +86,7 @@ const modulesData = [
                 "correct": 0
             },
             {
-                "q": "يُنصح دائماً باستخدام كلمات مرور ........... لحماية حساباتك من الاختراق.",
-                "options": [
-                    "تحتوي على اسمك",
-                    "قصيرة مكونة من أرقام فقط",
-                    "طويلة وتحتوي على رموز وحروف مختلفة",
-                    "سهلة التخمين"
-                ],
-                "correct": 2
-            },
-            {
-                "q": "يُسمح لك بنسخ أعمال ومقالات الآخرين من الإنترنت ونسبتها لنفسك دون ذكر المصدر.",
+                "q": "يُعتبر البريد الإلكتروني وسيلة تواصل متزامنة.",
                 "options": [
                     "صح",
                     "خطأ"
@@ -223,213 +94,139 @@ const modulesData = [
                 "correct": 1
             },
             {
-                "q": "من أشكال التصيد الاحتيالي (الاحتيال لسرقة البيانات) عبر الرسائل النصية القصيرة يُسمى:",
-                "options": [
-                    "Phishing",
-                    "Smishing",
-                    "Downloading",
-                    "Hacking"
-                ],
-                "correct": 1
-            },
-            {
-                "q": "حقوق الطبع والنشر (Copyright) تهدف إلى حماية إبداعات المؤلفين والمخترعين قانونياً.",
+                "q": "الخوارزمية هي مجموعة من الخطوات المرتبة منطقياً لحل مشكلة.",
                 "options": [
                     "صح",
                     "خطأ"
                 ],
                 "correct": 0
-            },
-            {
-                "q": "عند بدء كتابة معادلة حسابية في برنامج الجداول الحسابية (Excel) يجب أن تبدأ الخلية بعلامة:",
-                "options": [
-                    "+",
-                    "-",
-                    "=",
-                    "*"
-                ],
-                "correct": 2
-            },
-            {
-                "q": "الشبكة العنكبوتية العالمية التي نتصفح من خلالها المواقع يُرمز لها بالرمز:",
-                "options": [
-                    "WWW",
-                    "LAN",
-                    "CPU",
-                    "RAM"
-                ],
-                "correct": 0
-            },
-            {
-                "q": "للبحث عن كلمة محددة جداً بالترتيب على الإنترنت، نضعها بين:",
-                "options": [
-                    "علامتي ناقص (- -)",
-                    "علامتي تنصيص (\" \")",
-                    "قوسين ( )",
-                    "نجمتين (* *)"
-                ],
-                "correct": 1
-            },
-            {
-                "q": "من أمثلة المصادر الموثوقة للمعلومات:",
-                "options": [
-                    "المدونات الشخصية",
-                    "ويكيبيديا",
-                    "بنك المعرفة المصري",
-                    "منشورات فيسبوك"
-                ],
-                "correct": 2
             }
         ]
     },
     {
         "id": 1,
         "title": "التربية الدينية الإسلامية",
-        "badge": "الصف الثالث الإعدادي - الترم الأول",
+        "badge": "الصف الثالث الإعدادي - الترم الثاني",
         "icon": "fa-mosque",
-        "desc": "يتناول العقائد والعبادات والسير والأخلاق، بالإضافة إلى أحكام التجويد الأساسية بصورة مبسطة وعميقة.",
+        "desc": "دراسة شاملة لسورة المؤمنون وأحكام التجويد، القضاء والقدر، الحج والعمرة، السيرة النبوية، والتوازن البيئي.",
         "sections": [
             {
-                "title": "الوحدة الأولى: من القرآن الكريم",
+                "title": "الوحدة الأولى: القرآن الكريم (سورة المؤمنون وأحكام التجويد)",
                 "items": [
                     {
-                        "title": "الدرس 1: سورة المؤمنون (تفسير وحفظ)",
-                        "shortDesc": "تفسير بداية سورة المؤمنون والتعرف على صفات النجاة والفردوس.",
+                        "title": "سورة المؤمنون وصفات الفلاح",
+                        "shortDesc": "تلاوة الآيات واستنتاج صفات المؤمنين التي تؤدي إلى الفلاح.",
                         "icon": "fa-book-open",
                         "objectives": [
-                            "أن يتلو السورة تلاوة صحيحة معبرة مع الالتزام بأحكام التجويد.",
-                            "أن يعدد صفات المؤمنين المفلحين الذين يستحقون جنات الفردوس.",
-                            "أن يفسر معاني الآيات بدقة ويفهم المقصود بكلمة (اللغو) و(الفردوس)."
+                            "أن يتلو الطالب الآيات تلاوة صحيحة معتمدة على أحكام التجويد.",
+                            "أن يستنتج صفات المؤمنين التي تؤدي إلى الفلاح."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam1/800/400\" alt=\"Quran\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">تعريف بسورة المؤمنون</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">سورة المؤمنون هي سورة <strong>مكية</strong> (نزلت قبل الهجرة في مكة). سُميت بهذا الاسم لأنها بدأت بذكر صفات المؤمنين المفلحين الذين استحقوا الفردوس الأعلى، وهي تقدم دستوراً أخلاقياً وعملياً للمسلم.</p>\n                            <h3 class=\"text-2xl font-bold text-dark mt-8 mb-4\">صفات المؤمنين المفلحين كما وردت بالآيات</h3>\n                            <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-8\">\n                                <div class=\"bg-gray-50 p-4 rounded-xl border border-gray-200\">\n                                    <h4 class=\"font-bold text-indigo-700 mb-1\">1. الخشوع في الصلاة</h4>\n                                    <p class=\"text-sm text-gray-600\">سكون الجوارح وحضور القلب، وعدم الانشغال بأمور الدنيا أثناء الوقوف بين يدي الله.</p>\n                                </div>\n                                <div class=\"bg-gray-50 p-4 rounded-xl border border-gray-200\">\n                                    <h4 class=\"font-bold text-indigo-700 mb-1\">2. الإعراض عن اللغو</h4>\n                                    <p class=\"text-sm text-gray-600\">الابتعاد عن الكلام الباطل والتصرفات التافهة التي لا فائدة منها في الدين أو الدنيا.</p>\n                                </div>\n                                <div class=\"bg-gray-50 p-4 rounded-xl border border-gray-200\">\n                                    <h4 class=\"font-bold text-indigo-700 mb-1\">3. إيتاء الزكاة</h4>\n                                    <p class=\"text-sm text-gray-600\">إخراج حق الله في المال لتطهير النفس من البخل ومساعدة المحتاجين.</p>\n                                </div>\n                                <div class=\"bg-gray-50 p-4 rounded-xl border border-gray-200\">\n                                    <h4 class=\"font-bold text-indigo-700 mb-1\">4. المحافظة على الأمانات والعهد</h4>\n                                    <p class=\"text-sm text-gray-600\">حفظ حقوق الناس وأسرارهم، والوفاء بالوعود مهما كانت الظروف.</p>\n                                </div>\n                            </div>\n                        \n<div class=\"mt-8\">\n    <h4 class=\"font-bold text-lg mb-3 text-indigo-700\"><i class=\"fa-brands fa-youtube text-red-600 mr-2\"></i> فيديو توضيحي: تلاوة سورة المؤمنون</h4>\n    <div class=\"aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-md bg-gray-900 border-4 border-gray-800\">\n        <iframe src=\"https://www.youtube-nocookie.com/embed/_nx76MlMzFE?rel=0\" title=\"تلاوة سورة المؤمنون\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\" class=\"w-full h-64 md:h-96\"></iframe>\n    </div>\n    <div class=\"text-center mt-3\">\n        <a href=\"https://www.youtube.com/watch?v=_nx76MlMzFE\" target=\"_blank\" class=\"inline-block bg-red-50 text-red-600 hover:bg-red-600 hover:text-white transition font-bold py-2 px-6 rounded-full text-sm border border-red-200 shadow-sm\">\n            <i class=\"fa-solid fa-arrow-up-right-from-square\"></i> إذا لم يعمل الفيديو داخل الموقع، اضغط هنا للمشاهدة على يوتيوب\n        </a>\n    </div>\n</div>\n"
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam_g9_1/800/400\" alt=\"Quran\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">صفات الفلاح</h3>\n<ul class=\"list-disc list-inside mb-6 space-y-2 text-gray-700 text-lg\">\n    <li>الخشوع في الصلاة</li>\n    <li>الإعراض عن اللغو</li>\n    <li>أداء الزكاة</li>\n    <li>حفظ الفروج</li>\n    <li>رعاية الأمانات والعهود</li>\n</ul>\n\n<div class=\"mt-8\">\n    <h4 class=\"font-bold text-lg mb-3 text-indigo-700\"><i class=\"fa-brands fa-youtube text-red-600 mr-2\"></i> فيديو تفاعلي: تلاوة سورة المؤمنون (1-11)</h4>\n    <div class=\"aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-md bg-gray-900 border-4 border-gray-800\">\n        <iframe src=\"https://www.youtube-nocookie.com/embed/_nx76MlMzFE?rel=0\" title=\"تلاوة سورة المؤمنون\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\" class=\"w-full h-64 md:h-96\"></iframe>\n    </div>\n</div>\n"
                     },
                     {
-                        "title": "الدرس 2: من أحكام التجويد (القلقلة)",
-                        "shortDesc": "شرح حكم القلقلة وحروفها وأنواعها.",
+                        "title": "ركن التجويد (المد)",
+                        "shortDesc": "تطبيق حكم المد بأنواعه أثناء التلاوة.",
                         "icon": "fa-volume-high",
                         "objectives": [
-                            "أن يعرف مفهوم القلقلة لغة واصطلاحاً.",
-                            "أن يحدد حروف القلقلة المجموعة في (قطب جد).",
-                            "أن يفرق عملياً ونظرياً بين القلقلة الكبرى والصغرى."
+                            "أن يطبق حكم 'المد' بأنواعه أثناء التلاوة."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam2/800/400\" alt=\"Tajweed\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">مفهوم القلقلة وحروفها</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">القلقلة هي اضطراب الحرف عند النطق به ساكناً حتى يُسمع له نبرة قوية. حروفها خمسة جُمعت في جملة: <strong>(قُطْبُ جَدْ)</strong>.</p>\n                            \n                            <h3 class=\"text-2xl font-bold text-dark mt-8 mb-4\">أنواع القلقلة</h3>\n                            <div class=\"space-y-4 mb-8\">\n                                <div class=\"bg-white p-5 rounded-xl border-l-4 border-l-secondary shadow-sm\">\n                                    <h4 class=\"font-bold text-lg text-dark mb-2\">1. قلقلة كبرى</h4>\n                                    <p class=\"text-gray-600 mb-2\">وتحدث عندما يقع حرف القلقلة في <strong>آخر الكلمة</strong> الموقوف عليها. وتكون القلقلة هنا قوية وواضحة جداً.</p>\n                                    <p class=\"text-secondary font-bold text-xl bg-gray-50 inline-block px-3 py-1 rounded\">مثال: قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ</p>\n                                </div>\n                                <div class=\"bg-white p-5 rounded-xl border-l-4 border-l-primary shadow-sm\">\n                                    <h4 class=\"font-bold text-lg text-dark mb-2\">2. قلقلة صغرى</h4>\n                                    <p class=\"text-gray-600 mb-2\">وتحدث عندما يقع حرف القلقلة الساكن في <strong>وسط الكلمة</strong> أو الكلام. وتكون نبرة الصوت هنا أخف.</p>\n                                    <p class=\"text-primary font-bold text-xl bg-gray-50 inline-block px-3 py-1 rounded\">مثال: يَقْطَعُونَ ، يَبْغُونَ</p>\n                                </div>\n                            </div>\n                        "
-                    },
-                    {
-                        "title": "الدرس 3: من صفات المؤمنين (تكملة)",
-                        "shortDesc": "المحافظة على الفروج والصلاة.",
-                        "icon": "fa-user-shield",
-                        "objectives": [
-                            "أن يذكر الطالب أهمية العفة في الإسلام.",
-                            "أن يبين جزاء من يتصف بصفات الفلاح."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam6/800/400\" alt=\"Modesty\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">المحافظة على العفة والصلاة</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">تختتم الآيات الأولى من السورة بذكر حفظ الفروج والمحافظة على الصلوات في أوقاتها. إن اجتماع هذه الصفات يؤدي إلى استحقاق ميراث عظيم وهو جنة الفردوس الخالدة.</p>\n                        "
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam_g9_tajweed/800/400\" alt=\"Tajweed\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">أحكام التجويد: المد</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">إطالة الصوت بحرف المد. أقسامه:</p>\n<ul class=\"list-disc list-inside mb-6 space-y-2 text-gray-700 text-lg\">\n    <li><strong>طبيعي:</strong> مثل (قَالَ).</li>\n    <li><strong>فرعي:</strong> بسبب الهمز أو السكون.</li>\n</ul>\n"
                     }
                 ]
             },
             {
-                "title": "الوحدة الثانية: من الحديث الشريف",
+                "title": "الوحدة الثانية: العقيدة والمجتمع (القضاء والقدر - الإسلام والعمل)",
                 "items": [
                     {
-                        "title": "الدرس 1: التعاون على البر والتقوى",
-                        "shortDesc": "أهمية التعاون في الإسلام في وجوه الخير.",
-                        "icon": "fa-handshake-angle",
+                        "title": "القضاء والقدر والإسلام والعمل",
+                        "shortDesc": "الفرق بين التوكل والتواكل وقيمة العمل.",
+                        "icon": "fa-scale-balanced",
                         "objectives": [
-                            "أن يستنتج فوائد التعاون على استقرار المجتمع وتماسكه.",
-                            "أن يطبق مبدأ المساندة والإيثار في حياته اليومية بالمدرسة والمنزل."
+                            "أن يفرق الطالب بين التوكل والتواكل.",
+                            "أن يوضح أهمية الإيمان بالقضاء والقدر في راحة النفس.",
+                            "أن يدرك قيمة إتقان العمل في الإسلام."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam3/800/400\" alt=\"Cooperation\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">التعاون في الإسلام</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">الإسلام دين اجتماعي يرفض الأنانية. يقول الله تعالى: <strong>(وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ ۖ وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ)</strong>. فالمؤمن للمؤمن كالبنيان يشد بعضه بعضاً.</p>\n                        "
-                    },
-                    {
-                        "title": "الدرس 2: العلم والعمل",
-                        "shortDesc": "أهمية اقتران العلم النافع بالعمل الجاد.",
-                        "icon": "fa-book-open-reader",
-                        "objectives": [
-                            "أن يدرك خطورة العلم بلا عمل.",
-                            "أن يفسر الأحاديث الحاثة على العمل والإنتاج."
-                        ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam7/800/400\" alt=\"Knowledge\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">العمل ثمرة العلم</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">العلم في الإسلام ليس مجرد معلومات تحفظ، بل هو منهج للحياة والتطبيق. حذر النبي من العلم الذي لا ينفع صاحبه ولا ينعكس على أخلاقه وعمله وإنتاجه في المجتمع.</p>\n                        "
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam_g9_2/800/400\" alt=\"Work and Faith\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">مفهوم القضاء والقدر</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">إيمان المسلم بأن كل ما يقع في الكون هو بعلم الله وإرادته، مع وجوب الأخذ بالأسباب.</p>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">التوكل والتواكل</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\"><strong>التوكل:</strong> هو الأخذ بالأسباب مع الاعتماد على الله.<br><strong>التواكل:</strong> فهو ترك العمل والاعتماد على الغير.</p>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">العمل والإنتاج</h3>\n<div class=\"bg-indigo-50 border border-indigo-200 p-5 rounded-xl text-indigo-800 mb-6 shadow-inner\">\n    <i class=\"fa-solid fa-quote-right text-indigo-500 mx-2\"></i> قال رسول الله ﷺ: \"ما أكل أحد طعاماً قط خيراً من أن يأكل من عمل يده...\"\n</div>\n"
                     }
                 ]
             },
             {
-                "title": "الوحدة الثالثة: السيرة النبوية والشخصيات",
+                "title": "الوحدة الثالثة: العبادات (الحج والعمرة)",
                 "items": [
                     {
-                        "title": "الدرس 1: غزوة تبوك",
-                        "shortDesc": "أسباب ونتائج وتضحيات جيش العسرة.",
+                        "title": "مناسك الحج والعمرة",
+                        "shortDesc": "المقارنة بين الحج والعمرة والتعرف على المناسك.",
+                        "icon": "fa-kaaba",
+                        "objectives": [
+                            "أن يتعرف الطالب على مناسك الحج والعمرة."
+                        ],
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam_g9_3/800/400\" alt=\"Kaaba\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">الحج والعمرة</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">تعرف على مناسك الحج والعمرة من خلال الأنشطة التفاعلية والمقارنة بينهما بأسلوب السحب والإفلات.</p>\n"
+                    }
+                ]
+            },
+            {
+                "title": "الوحدة الرابعة: السيرة النبوية (غزوة تبوك وحجة الوداع)",
+                "items": [
+                    {
+                        "title": "غزوة تبوك وحجة الوداع ووفاة النبي",
+                        "shortDesc": "استخلاص دروس البذل والتضحية وتحليل المبادئ الإنسانية.",
                         "icon": "fa-horse-head",
                         "objectives": [
-                            "أن يتعرف الطالب على أسباب غزوة تبوك.",
-                            "أن يستنبط الدروس من تجهيز جيش العسرة وتبرعات الصحابة."
+                            "أن يستخلص دروس البذل والتضحية من جيش العسرة.",
+                            "أن يحلل المبادئ الإنسانية في خطبة الوداع.",
+                            "أن يقتدي بموقف أبي بكر الصديق عند وفاة النبي ﷺ."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam8/800/400\" alt=\"History\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">جيش العسرة</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">وقعت غزوة تبوك في السنة التاسعة للهجرة في وقت شديد الحرارة وقحط. لذلك سمي جيشها بـ \"جيش العسرة\". أظهر الصحابة مثل أبي بكر وعمر وعثمان تضحيات مبهرة في التبرع لتجهيز الجيش لصد خطر الروم.</p>\n                        "
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam_g9_4/800/400\" alt=\"History\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">غزوة تبوك (جيش العسرة)</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">أسبابها (الروم)، وسميت بذلك لشدة الحر وقلة المال والماء. موقف الصحابة (تجهيز عثمان بن عفان لثلث الجيش، وتبرع أبي بكر بماله كله).</p>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">حجة الوداع ووفاة النبي ﷺ</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\"><strong>حجة الوداع:</strong> في العام 10 هـ. خطبة النبي الجامعة التي أكدت على (حرمة الدماء والأموال، حقوق النساء، التمسك بكتاب الله وسنته).<br><strong>وفاة النبي ﷺ:</strong> في العام 11 هـ، وموقف عمر بن الخطاب (عدم التصديق)، وموقف أبي بكر الحازم: \"من كان يعبد محمداً فإن محمداً قد مات...\".</p>\n"
+                    }
+                ]
+            },
+            {
+                "title": "القصة الإضافية: خواطر إسلامية في التوازن البيئي",
+                "items": [
+                    {
+                        "title": "التوازن البيئي في الإسلام",
+                        "shortDesc": "ربط تعاليم الإسلام بالحفاظ على البيئة وترشيد الاستهلاك.",
+                        "icon": "fa-leaf",
+                        "objectives": [
+                            "أن يربط الطالب بين تعاليم الإسلام والحفاظ على البيئة.",
+                            "أن يقترح حلولاً عملية لترشيد الاستهلاك."
+                        ],
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam_g9_5/800/400\" alt=\"Environment\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">مفهوم التوازن البيئي</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">خلق الله الكون بمقدار وميزان دقيق <em>(وخلق كل شيء فقدره تقديراً)</em>.</p>\n\n<h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">أنواع التلوث وعلاجه</h3>\n<p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">تلوث الماء، الهواء، والضوضاء. وتوجيهات الإسلام بالمحافظة على الموارد (نهي النبي عن الإسراف في الماء ولو على نهر جارٍ).</p>\n"
                     }
                 ]
             }
         ],
         "activities": [
             {
-                "title": "نشاط قرآني وتجويد",
-                "desc": "استخرج 10 كلمات من سورة المؤمنون بها أحكام قلقلة، وبين نوع القلقلة في جدول (صغرى أم كبرى)."
+                "title": "تحديد النص (Hotspot)",
+                "desc": "يعرض المنحى آية، ويطلب من الطالب النقر على الكلمات التي تحتوي على \"مد طبيعي\"."
             },
             {
-                "title": "محاكاة حساب الزكاة",
-                "desc": "افترض أن مسلماً يمتلك مبلغ 100 ألف جنيه ومر عليه الحول. احسب قيمة الزكاة المستحقة واقترح توزيعها."
+                "title": "تحليل سيناريو (Scenario-based)",
+                "desc": "عرض قصة قصيرة لطالب لم يذاكر ورسب، وقال \"هذا قضاء وقدر\". هل تصرفه صحيح أم خاطئ؟ ولماذا؟"
             },
             {
-                "title": "البحث في السيرة",
-                "desc": "اكتب بحثاً صغيراً عن دور عثمان بن عفان رضي الله عنه في تجهيز جيش العسرة لغزوة تبوك."
+                "title": "الخط الزمني (Timeline)",
+                "desc": "يقوم الطالب بسحب الأحداث (غزوة تبوك، حجة الوداع، وفاة النبي) وترتيبها على خط زمني تفاعلي مع كتابة العام الهجري لكل حدث."
+            },
+            {
+                "title": "لعبة فرز النفايات الافتراضية",
+                "desc": "نشاط تفاعلي يعزز فكرة النظافة والمحافظة على البيئة كجزء من الإيمان."
             }
         ],
         "quiz": [
             {
-                "q": "سورة المؤمنون هي سورة مدنية نزلت بعد الهجرة.",
+                "q": "أكمل: ورثة الفردوس هم الذين يحافظون على ________.",
                 "options": [
-                    "صح",
-                    "خطأ"
-                ],
-                "correct": 1
-            },
-            {
-                "q": "من صفات المؤمنين المفلحين التي ذُكرت في بداية سورة المؤمنون:",
-                "options": [
-                    "الخشوع في الصلاة",
-                    "كثرة المزاح واللعب",
-                    "حب جمع المال",
-                    "تجنب العمل"
-                ],
-                "correct": 0
-            },
-            {
-                "q": "حروف القلقلة في علم التجويد مجموعة في عبارة:",
-                "options": [
-                    "يرملون",
-                    "قطب جد",
-                    "حي طهر",
-                    "خص ضغط قظ"
-                ],
-                "correct": 1
-            },
-            {
-                "q": "الإيمان بالملائكة هو الركن الثاني من أركان الإيمان الستة.",
-                "options": [
-                    "صح",
-                    "خطأ"
-                ],
-                "correct": 0
-            },
-            {
-                "q": "عندما يأتي حرف (القاف) ساكناً في وسط الكلمة مثل (يَقْطَعُونَ) يسمى هذا الحكم:",
-                "options": [
-                    "إظهار حلقي",
-                    "قلقلة كبرى",
-                    "قلقلة صغرى",
-                    "إدغام"
+                    "أموالهم",
+                    "أوقاتهم",
+                    "صلواتهم",
+                    "أعمالهم"
                 ],
                 "correct": 2
             },
             {
-                "q": "أمرنا الإسلام بالتعاون على الإثم والعدوان.",
+                "q": "الإيمان بالقضاء والقدر يدعو إلى الكسل وترك العمل.",
                 "options": [
                     "صح",
                     "خطأ"
@@ -437,40 +234,74 @@ const modulesData = [
                 "correct": 1
             },
             {
-                "q": "يسمى جيش المسلمين في غزوة تبوك بـ:",
+                "q": "الصحابي الذي جهز جيش العسرة هو:",
                 "options": [
-                    "جيش الفتح",
-                    "جيش العسرة",
-                    "جيش بدر",
-                    "جيش اليرموك"
+                    "عمر بن الخطاب",
+                    "عثمان بن عفان",
+                    "علي بن أبي طالب",
+                    "خالد بن الوليد"
                 ],
                 "correct": 1
             },
             {
-                "q": "الصحابي الذي تبرع بمال عظيم لتجهيز جيش العسرة هو:",
+                "q": "التوكل هو ترك العمل والاعتماد على الغير.",
                 "options": [
-                    "عثمان بن عفان",
-                    "خالد بن الوليد",
-                    "أسامة بن زيد",
-                    "بلال بن رباح"
+                    "صح",
+                    "خطأ"
+                ],
+                "correct": 1
+            },
+            {
+                "q": "سميت غزوة تبوك بهذا الاسم نسبة إلى جيش العسرة لشدة الحر وقلة المال.",
+                "options": [
+                    "صح",
+                    "خطأ"
                 ],
                 "correct": 0
             },
             {
-                "q": "العلم النافع في الإسلام هو الذي لا يصاحبه عمل.",
+                "q": "قال رسول الله ﷺ: 'ما أكل أحد طعاماً قط خيراً من أن يأكل من عمل يده' يحثنا هذا الحديث على:",
                 "options": [
-                    "صح",
-                    "خطأ"
+                    "الصوم",
+                    "العمل والإنتاج",
+                    "السفر",
+                    "النوم"
                 ],
                 "correct": 1
             },
             {
-                "q": "المراد باللغو في سورة المؤمنون:",
+                "q": "في خطبة الوداع، أكد النبي ﷺ على:",
                 "options": [
-                    "الكلام المفيد",
-                    "الكلام الباطل الذي لا فائدة منه",
-                    "السكوت الطويل",
-                    "التسبيح"
+                    "حرمة الدماء والأموال",
+                    "تجهيز الجيوش",
+                    "بناء المساجد",
+                    "التجارة"
+                ],
+                "correct": 0
+            },
+            {
+                "q": "من أنواع التلوث الذي وجهنا الإسلام لعلاجه:",
+                "options": [
+                    "تلوث الماء",
+                    "تلوث الهواء",
+                    "الضوضاء",
+                    "جميع ما سبق"
+                ],
+                "correct": 3
+            },
+            {
+                "q": "المد الطبيعي يمد بمقدار حركتين.",
+                "options": [
+                    "صح",
+                    "خطأ"
+                ],
+                "correct": 0
+            },
+            {
+                "q": "الإسراف في الماء مباح إذا كان من نهر جارٍ.",
+                "options": [
+                    "صح",
+                    "خطأ"
                 ],
                 "correct": 1
             }
@@ -494,7 +325,7 @@ const modulesData = [
                             "أن يوضح أثر الإيمان بالآخرة في تهذيب سلوك الفرد.",
                             "أن يميز بوضوح بين التوكل (الإيجابي) والتواكل (السلبي)."
                         ],
-                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam4/800/400\" alt=\"Faith\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">ثمرات الإيمان باليوم الآخر</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">الإيمان باليوم الآخر يجعل المسلم يمتلك رقابة ذاتية، فهو يعلم أن كل عمل مُسجل.</p>\n                            \n                            <h3 class=\"text-2xl font-bold text-dark mt-8 mb-4\">التوكل مقابل التواكل في القضاء والقدر</h3>\n                            <ul class=\"mb-6 space-y-3 bg-red-50 p-6 rounded-xl border border-red-100\">\n                                <li><strong>التواكل (مرفوض):</strong> هو الكسل وترك العمل بحجة أن كل شيء مقدر.</li>\n                                <li class=\"text-green-800\"><strong>التوكل (مطلوب):</strong> هو الأخذ بكافة الأسباب والاجتهاد التام، ثم تفويض النتيجة لله.</li>\n                            </ul>\n                        "
+                        "content": "\n<div class=\"mb-8 rounded-2xl overflow-hidden shadow-lg border-4 border-white\">\n    <img src=\"https://picsum.photos/seed/islam4/800/400\" alt=\"Faith\" class=\"w-full h-64 md:h-80 object-cover transform hover:scale-105 transition duration-500\">\n</div>\n\n                            <h3 class=\"text-2xl font-bold text-dark mt-6 mb-4\">ثمرات الإيمان باليوم الآخر</h3>\n                            <p class=\"mb-4 text-gray-700 leading-relaxed text-lg\">الإيمان باليوم الآخر يجعل المسلم يمتمل رقابة ذاتية، فهو يعلم أن كل عمل مُسجل.</p>\n                            \n                            <h3 class=\"text-2xl font-bold text-dark mt-8 mb-4\">التوكل مقابل التواكل في القضاء والقدر</h3>\n                            <ul class=\"mb-6 space-y-3 bg-red-50 p-6 rounded-xl border border-red-100\">\n                                <li><strong>التواكل (مرفوض):</strong> هو الكسل وترك العمل بحجة أن كل شيء مقدر.</li>\n                                <li class=\"text-green-800\"><strong>التوكل (مطلوب):</strong> هو الأخذ بكافة الأسباب والاجتهاد التام، ثم تفويض النتيجة لله.</li>\n                            </ul>\n                        "
                     },
                     {
                         "title": "الدرس 2: الإيمان بالملائكة",
@@ -635,7 +466,7 @@ const modulesData = [
                 "correct": 1
             },
             {
-                "q": "الملائكة مخلوقات من نار.",
+                "q": "الملائكة مخلوقات من نور.",
                 "options": [
                     "صح",
                     "خطأ"
